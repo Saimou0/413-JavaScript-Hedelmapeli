@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>413 JavaScript Hedelmäpeli</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="Logo" id="Logo">
+            <header class="header">
+                <h1>Hedelmäpeli</h1>
+            </header>
+        </div>
+        
+        <!-- Raha -->
+        <div class="raha" id="raha">
+            <img src="Raha/Kolikko.jpg" alt="" class="RahaKuva">
+            <p id="RahaMaara" class="RahaMaara"></p>
+            <button id="PanosPlus" class="panosNapit ylos-nuoli"></button>
+            <p id="Panos" class="Panos"></p>
+            <button id="PanosMiinus" class="panosNapit alas-nuoli"></button>
+
+            <p id="voittoIlmoitus" class="voittoIlmoitus"></p>
+        </div>
+
+        <!-- Rullat -->
+        <div class="peli" id="peli">
+            <img src="Rullat/Kuva1.jpg" alt="Rulla1" class="Rulla" id="Rullat">           
+            <img src="Rullat/Kuva2.jpg" alt="Rulla2" class="Rulla" id="Rullat">           
+            <img src="Rullat/Kuva3.jpg" alt="Rulla3" class="Rulla" id="Rullat">
+            <img src="Rullat/Kuva4.jpg" alt="Rulla4" class="Rulla" id="Rullat">
+
+            <br>
+            
+            <button id="lukitse1" class="lukitsePainike nappi-vari">Lukitse</button>
+            <button id="lukitse2" class="lukitsePainike nappi-vari">Lukitse</button>
+            <button id="lukitse3" class="lukitsePainike nappi-vari">Lukitse</button>
+            <button id="lukitse4" class="lukitsePainike nappi-vari">Lukitse</button>
+            
+            <br>
+            
+
+        </div>
+
+        <br>
+        <!-- Napit -->
+        <div class="napit" id="napit">
+            <button type="button" id="pelaa" class="pelaa">Pelaa</button>
+        </div>
+
+        <div class="loppuNaytto" id="loppuNaytto" style="display: none;">
+            <h2>Peli loppui</h2>
+            <p id="peliKerrat"></p>
+        </div>
+
+    </div>
+    
+
+    <script src="logiikka.js"></script>
+</body>
+</html>
