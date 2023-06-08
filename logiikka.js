@@ -119,6 +119,7 @@ function peliLoppui() {
 
     document.getElementById("loppuNaytto").style.display = "block";
     document.getElementById("peliKerrat").innerHTML = "Pelasit: " + peliKerrat + " kertaa";
+    document.getElementById("kaytettyRaha").innerHTML = "Kaytit: " + kaytettyRaha + " kolikkoa";
     
 
 }
